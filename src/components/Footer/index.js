@@ -2,7 +2,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className='container'>
-      <span>@2020 Nguyễn Tuấn Quang</span>
+      <span>HUP - Đỗ Thị Hồng Anh</span>
     </div>
   );
 };

@@ -1,41 +1,55 @@
 import React from 'react';
-import { FaGraduationCap, FaUserTie, FaHome, FaBriefcase, FaSitemap } from 'react-icons/fa';
+import logo from '../../img/hup.png';
+import {
+  FaGraduationCap,
+  FaUserTie,
+  FaHome,
+  FaBriefcase,
+  FaSitemap,
+  FaAward,
+} from 'react-icons/fa';
 const Sidebar = () => {
   return (
     <div className='desktop-sidebar'>
       <div className='logo'>
-        <h1>NTQ</h1>
+        <img src={logo} />
       </div>
       <nav id='side-bar'>
         <ul>
           <li>
             <a href='#home'>
               <FaHome />
-              Home
+              Trang chủ
             </a>
           </li>
           <li>
             <a href='#about-me'>
               <FaUserTie />
-              About
+              Giới thiệu
             </a>
           </li>
           <li>
-            <a href='#skills'>
+            <a href='#education'>
               <FaGraduationCap />
-              Skills
+              Học vấn
             </a>
           </li>
           <li>
             <a href='#experience'>
               <FaBriefcase />
-              Experience
+              Trải nhiệm công việc
             </a>
           </li>
           <li>
             <a href='#works'>
               <FaSitemap />
-              Works
+              Hoạt động
+            </a>
+          </li>
+          <li>
+            <a href='#awards'>
+              <FaAward />
+              Giải thưởng
             </a>
           </li>
         </ul>

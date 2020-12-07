@@ -3,7 +3,7 @@ import React from 'react';
 const Skills = () => {
   return (
     <div className='container'>
-      <h2>Skills</h2>
+      <h2>Hoạt động</h2>
       <div className='row'>
         <div className='col-xl-4 col-lg-12 '>
           <div
@@ -13,19 +13,8 @@ const Skills = () => {
               boxShadow: '0px 5px 20px 0px rgba(108, 108, 229, 0.5)',
             }}
           >
-            <h5>Programing language</h5>
-            <ul>
-              <li>HTML/CSS/SASS</li>
-              <li>Javascript</li>
-              <li>Typescript</li>
-              <li>Solidity</li>
-            </ul>
-            <h5>Frameworks &amp; Libraries</h5>
-            <ul>
-              <li>ReactJS / Redux / NodeJS</li>
-              <li>Bootstrap/ Ant design/ Material ui</li>
-              <li>Resful API / Json / XML</li>
-            </ul>
+            <h5>Triển khai dự án:</h5>
+            <h5> Experience Of Pharmacy</h5>
           </div>
         </div>
         <div className='col-xl-4 col-lg-12 '>
@@ -37,20 +26,8 @@ const Skills = () => {
               color: '#000',
             }}
           >
-            <h5>Database</h5>
-            <ul>
-              <li>MySQL</li>
-              <li>MongoDB</li>
-              <li>Firebase </li>
-            </ul>
-            <h5>Version control</h5>
-            <ul>
-              <li>Git</li>
-            </ul>
-            <h5>IDE</h5>
-            <ul>
-              <li>Visual code</li>
-            </ul>
+            <h5>Tổ chức Workshop:</h5>
+            <h5>"Thị trường bán lẻ Dược phẩm - Cơ hội nào từ miếng bánh tỷ đô"</h5>
           </div>
         </div>
         <div className='col-xl-4 col-lg-12 '>
@@ -61,16 +38,8 @@ const Skills = () => {
               boxShadow: '0px 5px 20px 0px rgba(249, 123, 139, 0.5)',
             }}
           >
-            <h5>Foreign language</h5>
-            <ul>
-              <li>Vstep: B1</li>
-            </ul>
-            <h5>Knowledge</h5>
-            <ul>
-              <li>Good understanding about OOP, SOLID principles</li>
-              <li>Good understanding about the Agile and Scrum process</li>
-              <li>Good time management, presentation and teamwork skills</li>
-            </ul>
+            <h5>Chương trình:</h5>
+            <h5>"Phỏng vấn thử Trình Dược Viên"</h5>
           </div>
         </div>
       </div>

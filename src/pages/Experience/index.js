@@ -5,54 +5,64 @@ import 'react-vertical-timeline-component/style.min.css';
 const Experience = () => {
   return (
     <div className='container'>
-      <h2>Experience</h2>
+      <h2>Trải nghiệm công việc</h2>
       <div className='row'>
         <div className='timeline-element'>
           <VerticalTimeline>
             <VerticalTimelineElement
               className='vertical-timeline-element--work'
-              date='2011 - present'
+              date='10/2019 - 05/2020'
               iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
               icon={<FaBriefcase />}
             >
-              <h3 className='vertical-timeline-element-title'>Frontend Developer</h3>
+              <h3 className='vertical-timeline-element-title'>Công ty TNHH Livin Green</h3>
+              <p className='sub'>CTV Tư vấn</p>
+              <p>Công việc:</p>
+              <ul>
+                <li>Tư vấn khách hàng quan tâm đến sản phẩm Trilado, UniBee qua fanpage.</li>
+                <li>Chăm sóc khách hàng đã mua sản phẩm.</li>
+              </ul>
+              <p>Kết quả: doanh thu cao nhất đạt 4.900.000 VNĐ/ca </p>
+              <p>Kinh nghiệm học hỏi được:</p>
+              <ul>
+                <li>Rèn luyện kĩ năng lắng nghe, thuyết phục khách hàng.</li>
 
-              <p>
-                <b>Compay:</b> VNPAY
-              </p>
-              <p>
-                <b>Main repository:</b> Maintain VNPAY wallet, Develop front end for VNPAY's
-                projects
-              </p>
+                <li>Tính trách nhiệm trong công việc.</li>
+              </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className='vertical-timeline-element--work'
-              date='6/2019 - 6/2020'
+              date='06/2019 - 09/2019'
               iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
               icon={<FaBriefcase />}
             >
-              <h3 className='vertical-timeline-element-title'>Blockchain developer</h3>
+              <h3 className='vertical-timeline-element-title'>Công ty TNHH Tuệ Linh</h3>
 
-              <p>
-                <b>Compay:</b> Sun Asterisk
-              </p>
-              <p>
-                <b>Main repository:</b> Research and report blockchain platforms, develop blockchain
-                projects, attend hackathons
-              </p>
+              <p className='sub'>CTV Truyền thông - Phòng Truyền thông &amp; TCSK</p>
+              <p>Công việc:</p>
+              <ul>
+                <li>
+                  Lập kế hoạch và triển khai hoạt động giới thiệu sản phẩm C-Nattu tại các điểm
+                  trường.
+                </li>
+                <li>Phối hợp với bộ phận khác (phòng Marketing) để hoàn thành công việc.</li>
+              </ul>
+              <p>Kinh nghiệm học hỏi được: </p>
+              <ul>
+                <li>Rèn luyện kĩ năng thuyết phục khách hàng.</li>
+                <li>Thích nghi với môi trường doanh nghiệp và chịu được áp lực.</li>
+              </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className='vertical-timeline-element--work'
-              date='9/2016 - 6/2020'
+              date='02/2019 - 03/2019'
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              icon={<FaGraduationCap />}
+              icon={<FaBriefcase />}
             >
-              <h3 className='vertical-timeline-element-title'>Bachelor’s Degree</h3>
+              <h3 className='vertical-timeline-element-title'>Công ty CP Dược Mỹ phẩm CVI</h3>
 
-              <p>University: UET - Vietnam National University</p>
-              <p>Faculty: Computer Science</p>
-              <p>Degree grade: Excellent</p>
-              <p>GPA: 3.33</p>
+              <p className='sub'>CTV tư vấn tại nhà thuốc</p>
+              <p>Công việc: tư vấn, giới thiệu sản phẩm Cumargold Kare tại nhà thuốc.</p>
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>

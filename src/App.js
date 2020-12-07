@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.scss';
 import Footer from './components/Footer';
 import MobileSidebar from './components/MobileSidebar';
 import Sidebar from './components/Sidebar';
 import AboutMe from './pages/AboutMe';
+import Awards from './pages/Awards';
+import Education from './pages/Education';
 import Experience from './pages/Experience';
 import Home from './pages/Home';
 import Skills from './pages/Skills';
-import Works from './pages/Works';
 function App() {
   return (
     <div>
@@ -23,14 +24,17 @@ function App() {
           <section id='about-me' className='about-me'>
             <AboutMe />
           </section>
-          <section id='skills' className='skills'>
-            <Skills />
+          <section id='education' className='education'>
+            <Education />
           </section>
           <section id='experience' className='experience'>
             <Experience />
           </section>
-          <section id='works' className='works'>
-            <Works />
+          <section id='works' className='skills'>
+            <Skills />
+          </section>
+          <section id='awards' className='awards'>
+            <Awards />
           </section>
         </div>
       </main>

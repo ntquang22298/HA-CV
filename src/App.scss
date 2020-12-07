@@ -5,12 +5,13 @@
   font-weight: 700;
   font-size: 16px;
   border-radius: 30px;
+  min-width: 100px;
 }
 @mixin card {
-  border-radius: 20px;
+  border-radius: 0.25em;
   background: #fff;
   padding: 30px;
-  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  box-shadow: 0 2px 2px 0 #ddd;
 }
 @mixin nav-item {
   a {
@@ -33,9 +34,7 @@
 html {
   scroll-behavior: smooth;
 }
-section {
-  padding-top: 110px;
-}
+
 h2 {
   font-size: 36px !important;
   margin: 0;
@@ -95,7 +94,7 @@ h2 {
   top: 0;
   height: 100vh;
   background: #353353;
-  width: 290px;
+  width: 350px;
   z-index: 1;
   border-right: solid 1px rgba(225, 225, 225, 0.1);
   .logo {
@@ -126,8 +125,23 @@ h2 {
   height: 100vh;
   align-items: center;
   display: flex;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./img/background.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+  .container {
+    z-index: 999;
+  }
   .intro {
-    z-index: 1;
+    z-index: 999;
     opacity: 1;
     max-width: 540px;
     text-align: center;
@@ -145,28 +159,18 @@ h2 {
     }
     .btn {
       @include red-btn;
+      font-size: 20px;
+      font-weight: bolder;
     }
     .vertical-flip {
       width: auto;
-      margin-left: -150px;
       display: inline;
       color: #fff;
       text-indent: 8px;
       font-size: 16px;
       text-align: center;
-      span {
-        display: inline;
-        font-weight: 700;
-        animation: vertical 5s linear infinite 0s;
-        -ms-animation: vertical 5s linear infinite 0s;
-        -webkit-animation: vertical 5s linear infinite 0s;
-        opacity: 0;
-        position: absolute;
-      }
-      span:nth-child(2) {
-        animation-delay: 2.5s;
-        -ms-animation-delay: 2.5s;
-        -webkit-animation-delay: 2.5s;
+      p {
+        font-size: 20px;
       }
     }
   }
@@ -185,13 +189,14 @@ h2 {
   }
 }
 .about-me {
-  padding-top: 110px;
+  padding-top: 200px;
   position: relative;
   .card {
     @include card;
   }
   .btn {
     @include red-btn;
+    background-color: #1299f6;
     margin-bottom: 15px;
   }
   h4 {
@@ -199,6 +204,7 @@ h2 {
     font-weight: 600;
   }
   .progress {
+    margin-top: 20px;
     margin-bottom: 1.5rem;
     height: 7px;
     background: #f1f1f1;
@@ -206,7 +212,7 @@ h2 {
   }
   .avatar {
     vertical-align: middle;
-    max-width: 200px;
+    max-width: 230px;
     border-radius: 50%;
   }
   svg {
@@ -218,7 +224,12 @@ h2 {
   }
 }
 .skills {
+  padding-top: 100px;
+
+  padding-bottom: 50px;
+
   .skill-box {
+    height: 500px;
     margin-top: 30px;
     padding: 30px;
     border-radius: 20px;
@@ -230,10 +241,22 @@ h2 {
     }
   }
   h5 {
+    font-size: 14px;
     font-weight: 700;
   }
 }
 .experience {
+  padding-top: 200px;
+
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 100%;
+  }
+  .sub {
+    font-size: 20px;
+  }
+  h3 {
+    font-weight: 700;
+  }
   .timeline-element {
     padding-left: 50px;
     margin-bottom: 50px;
@@ -242,11 +265,15 @@ h2 {
   }
 }
 .works {
-  padding-bottom: 50px;
   .card {
     margin-top: 30px;
     @include card;
     height: 250px;
+    &:hover {
+      box-shadow: 1px 1px 3px rgba(61, 234, 240, 0.3);
+      transform: scale(1.1);
+      transition: 1s ease-in;
+    }
   }
   a {
     height: 100%;
@@ -263,12 +290,13 @@ h2 {
   height: 100%;
   width: 100%;
 }
-@media only screen and (max-width: 991px) {
+
+@media only screen and (max-width: 1500px) {
   .main-content {
     margin-left: 0px;
   }
   .desktop-sidebar {
-    transform: translateX(-290px);
+    transform: translateX(-350px);
   }
   .mobile-sidebar {
     display: block;
@@ -280,84 +308,29 @@ h2 {
   text-align: center;
   color: #fff;
 }
-@keyframes vertical {
-  0% {
-    opacity: 0;
+.awards {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  .card {
+    @include card;
+    margin-top: 50px;
+    text-align: center;
   }
-  5% {
-    opacity: 0;
-    -moz-transform: rotateX(180deg);
-  }
-  10% {
-    opacity: 1;
-    -moz-transform: translateY(0px);
-  }
-  25% {
-    opacity: 1;
-    -moz-transform: translateY(0px);
-  }
-  30% {
-    opacity: 0;
-    -moz-transform: translateY(0px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+  svg {
+    font-size: 2em;
+    margin-top: 12px;
   }
 }
-@-moz-keyframes vertical {
-  0% {
-    opacity: 0;
+.education {
+  .card {
+    @include card;
   }
-  5% {
-    opacity: 0;
-    -moz-transform: rotateX(180deg);
+  padding-top: 150px;
+  svg {
+    font-size: 2em;
   }
-  10% {
-    opacity: 1;
-    -moz-transform: translateY(0px);
-  }
-  25% {
-    opacity: 1;
-    -moz-transform: translateY(0px);
-  }
-  30% {
-    opacity: 0;
-    -moz-transform: translateY(0px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes vertical {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 0;
-    -webkit-transform: rotateX(180deg);
-  }
-  10% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  25% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  30% {
-    opacity: 0;
-    -webkit-transform: translateY(0px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+  .row {
+    text-align: center;
   }
 }

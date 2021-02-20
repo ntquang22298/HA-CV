@@ -17,7 +17,7 @@ const Education = () => {
             <FaBook style={{ color: '#34a297' }} />
           </div>
           <div className='col-md-6'>
-            <h5>Khoa: Công nghiệp Dược</h5>
+            <h5>Chuyên ngành: Công nghiệp Dược</h5>
           </div>
         </div>
         <div className='row mt-3'>

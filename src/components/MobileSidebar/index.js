@@ -10,25 +10,28 @@ const MobileSidebar = () => {
           <button className='btn' onClick={() => setCollapsed(!collapsed)}>
             <AiOutlineMenuUnfold />
           </button>
-          <h1>NTQ</h1>
+          <h1>DHA</h1>
         </div>
 
         <div className='nav-collapse' style={{ display: collapsed ? 'none' : 'block' }}>
           <ul>
             <li>
-              <a href='#home'>Home</a>
+              <a href='#home'>Trang chủ</a>
             </li>
             <li>
-              <a href='#about-me'>About</a>
+              <a href='#about-me'>Giới thiệu</a>
             </li>
             <li>
-              <a href='#skills'>Skills</a>
+              <a href='#education'>Học vấn</a>
             </li>
             <li>
-              <a href='#experience'>Experience</a>
+              <a href='#experience'>Trải nghiệm công việc</a>
             </li>
             <li>
-              <a href='#works'>Works</a>
+              <a href='#works'>Hoạt động</a>
+            </li>
+            <li>
+              <a href='#awards'>Giải thưởng</a>
             </li>
           </ul>
         </div>
